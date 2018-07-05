@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { SafeAreaView, KeyboardAvoidingView, StyleSheet, View, Image, TextInput, Button, Text, Alert } from 'react-native';
-import {
-    signInOnFirebaseAsync      
-} from '../services/FirebaseApi';
+// import { signInOnFirebaseAsync } from '../services/FirebaseApi';
 const img = require('../assets/TodoList.png');
 
 export default class Login extends Component {
@@ -47,7 +45,8 @@ export default class Login extends Component {
                         <View style={styles.textConteiner}>
                             <Text>Not a member? Let's </Text>
                             <Text style={styles.textRegister}
-                                onPress={() => this.props.navigation.navigate('pageRegister')}>
+                                onPress={() => this.props.navigation.navigate('pageRegister')}
+                                >
                                 
                                 Register
                             </Text>
